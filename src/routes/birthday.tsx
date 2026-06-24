@@ -18,8 +18,7 @@ export const Route = createFileRoute("/birthday")({
 const wishes = [
   {
     title: "To the One Who Lights Up Every Room",
-    body: "Happy Birthday, my friend! 🎉
-Wishing you a day filled with happiness, laughter, and all the things you love. You’re not just a friend, but someone who makes life better and brighter. May this new year of your life bring you success, good health, endless joy, and all your dreams come true. Stay blessed and keep shining. Enjoy your special day! 🎂✨",
+    body: "Happy Birthday, my friend! 🎉\nWishing you a day filled with happiness, laughter, and all the things you love. You’re not just a friend, but someone who makes life better and brighter. May this new year of your life bring you success, good health, endless joy, and all your dreams come true. Stay blessed and keep shining. Enjoy your special day! 🎂✨",
   },
   {
     title: "Here's to Your Dreams",
