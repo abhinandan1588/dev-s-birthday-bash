@@ -46,8 +46,10 @@ function fireConfetti() {
 
 function Birthday() {
   const [revealed, setRevealed] = useState(false);
+  const [vh, setVh] = useState(800);
 
   useEffect(() => {
+    setVh(window.innerHeight);
     fireConfetti();
     const t = setTimeout(() => setRevealed(true), 1800);
     const interval = setInterval(fireConfetti, 6000);
@@ -67,7 +69,7 @@ function Birthday() {
           key={i}
           className="pointer-events-none absolute text-3xl"
           style={{ left: `${(i * 13 + 5) % 95}%`, bottom: -50 }}
-          animate={{ y: [-50, -window.innerHeight - 100], x: [0, i % 2 ? 30 : -30, 0], rotate: [0, 10, -10, 0] }}
+          animate={{ y: [-50, -(vh + 100)], x: [0, i % 2 ? 30 : -30, 0], rotate: [0, 10, -10, 0] }}
           transition={{ duration: 8 + (i % 4), repeat: Infinity, delay: i * 1.2, ease: "linear" }}
         >
           {emoji}
